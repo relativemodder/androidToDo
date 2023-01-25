@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <string name="imagePlaceholder">Human image</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="have_no_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
