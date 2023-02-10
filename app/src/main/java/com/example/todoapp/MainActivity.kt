@@ -1,12 +1,28 @@
 package com.example.todoapp
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.view.Window
+import androidx.appcompat.app.AppCompatActivity
+import com.example.todoapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.signUpBtn.setOnClickListener { view ->
+            goToRegisterActivity()
+        }
+
+    }
+
+    private fun goToRegisterActivity() {
+        val intent = Intent(this, RegistrationActivity::class.java)
+        startActivity(intent)
     }
 }
