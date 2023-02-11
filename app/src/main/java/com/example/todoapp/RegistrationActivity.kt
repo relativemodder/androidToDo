@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.todoapp.databinding.ActivityRegistrationBinding
+import com.example.todoapp.utils.*
 
 class RegistrationActivity : AppCompatActivity() {
 
@@ -75,13 +76,13 @@ class RegistrationActivity : AppCompatActivity() {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.registerBtn.setOnClickListener { view ->
+        binding.registerBtn.setOnClickListener { _ ->
             if (validateAllFields()) {
                 Toast.makeText(applicationContext, getString(R.string.success), Toast.LENGTH_SHORT).show()
             }
         }
 
-        binding.signInBtn.setOnClickListener { view ->
+        binding.signInBtn.setOnClickListener { _ ->
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

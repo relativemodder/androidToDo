@@ -9,7 +9,8 @@
     android:clipToPadding="false"
     android:paddingLeft="@dimen/padding_left_right"
     android:paddingRight="@dimen/padding_left_right"
-    tools:context=".RegistrationActivity">
+    tools:context=".RegistrationActivity"
+    android:isScrollContainer="true">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -53,7 +54,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeBackText" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:autofillHints="false"
         android:id="@+id/fullNameEdit"
         android:layout_width="match_parent"
@@ -72,7 +73,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeBackDescriptionText" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/emailEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -91,7 +92,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fullNameEdit" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/passwordEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -109,7 +110,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailEdit" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/confirmPasswordEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -127,7 +128,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordEdit" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/registerBtn"
         style="@android:style/Widget.Material.Button"
         android:layout_width="match_parent"
